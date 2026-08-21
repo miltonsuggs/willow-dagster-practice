@@ -18,22 +18,21 @@ WAREHOUSE = ROOT / "willow_warehouse.duckdb"
 
 
 class DuckDBWarehouse(ConfigurableResource):
-    """A tiny warehouse resource. In prod this would be a Snowflake resource
-    holding an account/credentials read from environment variables."""
+    """A tiny warehouse resource (Snowflake-resource analog)."""
     db_path: str = str(WAREHOUSE)
 
-    def connect(self) -> duckdb.DuckDBPyConnection:
-        return duckdb.connect(self.db_path)
+    def connect(self, read_only: bool = False) -> duckdb.DuckDBPyConnection:
+        return duckdb.connect(self.db_path, read_only=read_only)
 
     def execute(self, sql: str):
-        con = self.connect()
+        con = self.connect(read_only=True)
         try:
             return con.execute(sql).fetchall()
         finally:
             con.close()
 
     def query_df(self, sql: str):
-        con = self.connect()
+        con = self.connect(read_only=True)
         try:
             return con.execute(sql).fetchdf()
         finally:
