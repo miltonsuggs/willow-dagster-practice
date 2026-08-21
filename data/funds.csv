@@ -1,0 +1,24 @@
+fund_id,fund_name,asset_class,structure,manager,vintage_year,inception_date
+1,Real Beta Fund 1,Real Estate,Drawdown,Goldman SAM,2021,2021-09-01
+2,Real Core Fund 2,Real Estate,Drawdown,StepStone,2022,2022-08-01
+3,Real Income Fund 3,Real Estate,Drawdown,Northwind,2023,2023-12-01
+4,Private Beta Fund 1,Private Credit,Evergreen,Northwind,2022,2022-10-01
+5,Private Core Fund 2,Private Credit,Evergreen,Blue Harbor,2023,2023-03-01
+6,Private Income Fund 3,Private Credit,Evergreen,Apex Credit,2023,2023-02-01
+7,Private Growth Fund 4,Private Credit,Evergreen,Blue Harbor,2022,2022-10-01
+8,Private Select Fund 5,Private Credit,Evergreen,Northwind,2022,2022-01-01
+9,Private Beta Fund 1,Private Equity,Drawdown,Blue Harbor,2021,2021-08-01
+10,Private Core Fund 2,Private Equity,Drawdown,Carlyle,2021,2021-06-01
+11,Private Income Fund 3,Private Equity,Drawdown,Meridian,2023,2023-06-01
+12,Private Growth Fund 4,Private Equity,Drawdown,Carlyle,2023,2023-06-01
+13,Art Beta Fund 1,Art,Art-SPV,Carlyle,2022,2022-04-01
+14,Art Core Fund 2,Art,Art-SPV,Northwind,2022,2022-02-01
+15,Art Income Fund 3,Art,Art-SPV,Northwind,2021,2021-11-01
+16,Art Growth Fund 4,Art,Art-SPV,Carlyle,2023,2023-01-01
+17,Legal Beta Fund 1,Legal Finance,Note,Apex Credit,2021,2021-03-01
+18,Legal Core Fund 2,Legal Finance,Note,Carlyle,2023,2023-04-01
+19,Legal Income Fund 3,Legal Finance,Note,Meridian,2023,2023-04-01
+20,Legal Growth Fund 4,Legal Finance,Note,StepStone,2021,2021-04-01
+21,Short-Term Beta Fund 1,Short-Term Notes,Note,StepStone,2023,2023-01-01
+22,Short-Term Core Fund 2,Short-Term Notes,Note,Meridian,2021,2021-03-01
+23,Short-Term Income Fund 3,Short-Term Notes,Note,Carlyle,2022,2022-03-01

@@ -1,0 +1,9 @@
+# docker compose up   -> builds and serves the Dagster UI at http://localhost:3000
+services:
+  dagster:
+    build: .
+    image: willow-dagster
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app

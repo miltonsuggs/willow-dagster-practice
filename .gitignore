@@ -1,0 +1,17 @@
+# dagster local storage / warehouse (rebuilt on materialize)
+.dagster_home/
+tmp*/
+.tmp_dagster_home*/
+*.duckdb
+*.duckdb.wal
+TRIGGER_RUN
+# python env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# os/editor
+.DS_Store
+.vscode/

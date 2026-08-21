@@ -1,0 +1,9 @@
+.venv/
+*.duckdb
+*.duckdb.wal
+.dagster_home/
+tmp*/
+.tmp_dagster_home*/
+__pycache__/
+.git/
+.gitignore

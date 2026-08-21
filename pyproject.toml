@@ -1,0 +1,27 @@
+[project]
+name = "willow-dagster"
+version = "1.0.0"
+description = "Dagster orchestration on a synthetic private-markets dataset (asset-centric ELT with quality checks)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dagster>=1.11",
+    "dagster-webserver>=1.11",
+    "dagster-duckdb>=0.27",
+    "duckdb>=1.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.dagster]
+module_name = "willow_dagster.definitions"
+code_location_name = "willow_dagster"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["willow_dagster"]
